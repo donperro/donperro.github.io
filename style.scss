@@ -2,22 +2,60 @@ html, body{
 	margin: 0;
 	padding: 0;
 }
+body{
+	font-family: 'Open Sans', sans-serif;
+}
 header{
 	background-color: #ffab8c;
-	height: 80px;
+	height: 18vh;
+	transition: all 0.2s ease;
 	width: 100vw;
+}
+div{
+	position: relative;
 }
 main{
 	width: 100vw;
+	.columns{
+		.column{
+			&.left,
+			&.right{
+				height: 10vh;
+				transition: all 0.2s ease;
+			}
+			&.left{
+				background-color: #ff9068;
+			}
+			&.right{
+				background-color: #ffcdba;
+			}
+			&.content{
+				height: 50vh;
+			}
+			a{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,50%);
+				text-decoration: none;
+				color: #333;
+				transition: all 0.2s ease;
+				&:hover{
+					color: #90a4ae;
+				}
+			}
+		}
+	}
 }
 footer{
-	height: 40px;
-	height: 40px;
+	background-color: #bb9184;
+	transition: all 0.2s ease;
+	height: 12vh;
 }
-
 @media screen and (min-width:840px){
 	header{
 		position: fixed;
+		height: 90px;
 	}
 	main{
 		bottom: 45px;
@@ -25,9 +63,23 @@ footer{
 		position: fixed;
 		right: 0;
 		top: 90px;
+		.columns{
+			display: flex;
+			position: absolute;
+			justify-content: space-between;
+			height: 100%;
+			width: 100%;
+			.column{
+				&.left,
+				&.right{
+					width: 22.5%;
+				}
+			}
+		}
 	}
 	footer{
 		bottom: 0;
+		height: 45px;
 		position: fixed;
 		width: 100vw;
 	}
