@@ -1,18 +1,23 @@
+$body-size: 0.85em !important;
+$family-sans-serif: 'Open Sans', sans-serif;
+$red: #d91d26;
+$blue: #195a9b;
+
 @import "../../Dropbox/bulma/sass/utilities/_all";
+//@import "../../Dropbox/bulma/sass/utilities/initial-variables.sass";
+//@import "../../Dropbox/bulma/sass/utilities/functions.sass";
+//@import "../../Dropbox/bulma/sass/utilities/derived-variables.sass";
+//@import "../../Dropbox/bulma/sass/utilities/animations.sass";
+//@import "../../Dropbox/bulma/sass/utilities/mixins.sass";
+//@import "../../Dropbox/bulma/sass/utilities/controls.sass";
 @import "../../Dropbox/bulma/sass/base/_all";
+//@import "../../Dropbox/bulma/sass/base/minireset.sass";
+//@import "../../Dropbox/bulma/sass/base/generic.sass";
+//@import "../../Dropbox/bulma/sass/base/helpers.sass";
 //@import "../../Dropbox/bulma/sass/elements/_all";
 //@import "../../Dropbox/bulma/sass/components/_all";
 //@import "../../Dropbox/bulma/sass/grid/_all";
 //@import "../../Dropbox/bulma/sass/layout/_all";
-//@import "../../Dropbox/bulma/sass/utilities/animations.sass";
-//@import "../../Dropbox/bulma/sass/utilities/controls.sass";
-//@import "../../Dropbox/bulma/sass/utilities/derived-variables.sass";
-//@import "../../Dropbox/bulma/sass/utilities/functions.sass";
-//@import "../../Dropbox/bulma/sass/utilities/initial-variables.sass";
-//@import "../../Dropbox/bulma/sass/utilities/mixins.sass";
-//@import "../../Dropbox/bulma/sass/base/generic.sass";
-//@import "../../Dropbox/bulma/sass/base/helpers.sass";
-//@import "../../Dropbox/bulma/sass/base/minireset.sass";
 @import "../../Dropbox/bulma/sass/elements/box.sass";
 //@import "../../Dropbox/bulma/sass/elements/button.sass";
 @import "../../Dropbox/bulma/sass/elements/container.sass";
@@ -44,3 +49,4 @@
 //@import "../../Dropbox/bulma/sass/layout/footer.sass";
 //@import "../../Dropbox/bulma/sass/layout/hero.sass";
 //@import "../../Dropbox/bulma/sass/layout/section.sass";
+
