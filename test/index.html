@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.css">
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript">
+    window.onload = function() {
+      var myOptions = {
+        center: new google.maps.LatLng(19.407475,-99.027703),
+        zoom: 18,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        disableDefaultUI: true
+      };
+      var map = new google.maps.Map(document.getElementById("map_neza"), myOptions);
+    }
+</script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+          </a>
+          <button class="button navbar-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item">INICIO</a>
+            <a class="navbar-item">CONÓCENOS</a>
+            <a class="navbar-item">SERVICIOS</a>
+            <a class="navbar-item">COMPROMISO</a>
+            <a class="navbar-item">CONTACO</a>
+            <div class="navbar-item">mid.diabetes@gmail.com</div>
+            <div class="navbar-item">2619-1441</div>
+          </div>
+        </div>
+        
+      </nav>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h1 class="is-size-1 has-text-weight-bold has-text-centered">Comunícate con nosotros</h1>
+          <h1 class="is-size-1 has-text-weight-bold has-text-centered">Nos encanta atender a nuestros pacientes</h1>
+        </div>
+        <div class="column">
+          <form action="">
+            <div class="field">
+              <div class="control">
+                <input id="name" class="input" type="text" name="nombre" placeholder="Nombre" required> 
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <input id="email" class="input" type="text" name="email" placeholder="Email" required> 
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <input id="phone" class="input" type="text" name="telefono" placeholder="Teléfono" required> 
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <textarea id="comments" class="input" name="mensaje" rows="6" placeholder="Mensaje ..." required></textarea>
+              </div> 
+            </div>
+            <div class="field">
+              <div class="control">
+                <textarea class="textarea" placeholder="e.g. Hello world"></textarea>                
+              </div>
+            </div>
+            <div class="field is-grouped">
+              <!-- <div class="control">
+                <button class="button is-text">Cancel</button>
+              </div> -->
+              <div class="control">
+                <button class="button is-link">Enviar</button>
+              </div>
+            </div> 
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+      <div class="container">
+        <h2 class="is-size-2">Conócenos</h2>
+        <div class="columns">
+          <div class="column">
+            <h3 class="is-red">Atención Integrada al Paciente</h3>
+            <p>Medicina Integrada en Diabetes, tiene más de 20 años de experiencia brindando atención médica con especialistas en el tratamiento de la diabetes y sus complicaciones. Personalizamos el tratamiento con las mejores prácticas clínicas.</p>
+          </div>
+          <div class="column">
+            <h3 class="is-red">¡Toma el control de tu salud!</strong></h3>
+            <p>Sabemos la importancia de que recibas una consulta especializada de calidad. Por esa razón establecemos costos justos y flexibles a tus posibilidades.</p>
+          </div>
+          <div class="column">
+            <h3 class="is-red">Consulta Médica Especializada</strong></h3>
+            <p>Sabemos lo complicado que es estabilizar las consecuencias de la diabetes, por esa razón estamos comprometidos en brindar asistencia médica, seguimiento farmacoterapéutico, así como las técnicas y herramientas necesarias para que tengas el control de tu padecimiento.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  <section>
+    <div class="container">
+      <h2 class="is-size-2">Servicios especializados</h2>
+      <div class="columns">
+        <div class="column">
+          <dl>
+            <dt>
+              <h3 class="is-size-3">Consulta Médica Especializada</h3>
+              <i class="mdi mdi-plus"></i>
+            </dt>
+            <dd>
+              <p>Durante la consulta el médico especialista utiliza un método clínico que le permite identificar las necesidades de cada individuo, preescribe su tratamiento en base a estándares internacionales e incorpora en su práctica médica tecnologías en salud. </p>
+            </dd>
+            <dt>
+              <h3 class="is-size-3">Tratamiento Avanzado en Heridas</h3>
+              <i class="mdi mdi-plus"></i>
+            </dt>
+            <dd>
+              <p>A todo individuo que padece una herida crónica (úlceras venosas, úlceras por pie diabético, úlceras arteriales, úlceras por presión, etc.), se otorga un tratamiento basado en evidencia científica que disminuye el número de curaciones,  el dolor que éstas ocasionan al paciente y los gastos en los que se incurre por éstas intervenciones. </p>
+            </dd>
+            <dt>
+              <h3 class="is-size-3">Protocolo de Nanopartículas</h3>
+              <i class="mdi mdi-plus"></i>
+            </dt>
+            <dd>
+              <p>Nuestro equipo de médicos especialistas colabora estrechamente con la Dra. Tessy López Goerne, nominada al premio nobel de química en 2016, formando parte de la red de consultorios de nanomedicina.</p>
+            </dd>
+            <dt>
+              <h3 class="is-size-3">Servicio de Seguimiento Farmacoterapéutico</h3>
+              <i class="mdi mdi-plus"></i>
+            </dt>
+            <dd>
+              <p>Somos pioneros en México en implementar farmacia clínica en primer nivel de atención. Esto quiere decir que como nuestro paciente recibirás un seguimiento estrecho en donde nuestros especialistas te diseñaran el mejor plan para la toma de todos tus medicamentos.</p>
+            </dd>  
+            <dt>
+              <h3 class="is-size-3">Expediente Electrónico / APP</h3>
+              <i class="mdi mdi-plus"></i>
+            </dt>
+            <dd>
+              <p>Contamos con un expediente electrónico, que es personalizado para cada paciente. El expediente cuenta con una APP para descargarse en su smartphone, lo que le permite tener una comunicación más directa con su médico especialista. Este servicio es sin costo para el paciente.</p>
+            </dd>    
+            <dt>
+              <h3 class="is-size-3">Sesiones Médicas Informativas</h3>
+              <i class="mdi mdi-plus"></i>
+            </dt>
+            <dd>
+              <p>Las sesiones son un servicio de apoyo por parte de nuestro equipo médico para proporcionar información actualizada y tips para el control de tu enfermedad.</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="column"></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container has-text-centered">
+      <h2 class="is-size-2">Compromisos</h2>
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <h3 class="is-size-3">Misión</h3>
+            <p>Contribuir a mejorar la calidad de vida de las personas que viven con diabetes, por medio de una intervención clínica estructurada centrada en el paciente que busca responder a las necesidades y expectativas de cada individuo.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <h3 class="is-size-3">Visión</h3>
+            <p>Ser líderes en el primer nivel de atención, teniendo la mayor presencia de unidades médicas en el país; brindando una excelente calidad y calidez en todos los servicios que ofrecemos.</p>
+          </div>
+        </div>
+        <div class="column is-3">
+          <div class="box">
+            <h3 class="is-size-3">Valores</h3>
+            <ul>
+              <li>Honestidad</li>
+              <li>Humildad</li>
+              <li>Lealtad</li>
+              <li>Pasión</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h3 class="is-size-3">Clínica Nezahualcóyotl:</h3>
+          <p>Calle Lago Cupatitzio 109, Nezahualcóyotl, México, México</p>
+          <p><strong>Teléfono:</strong> 26 19 14 41</p>
+          <p><strong>Horarios</strong></p>
+          <p><strong>Lunes a viernes:</strong>  09:00 am - 08:00 pm</p>
+          <p><strong>Sábado:</strong> 03:00 pm - 08:00 pm</p>
+          <p><strong>Domingo:</strong> Cerrado</p>
+        </div>
+        <div class="column">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.1141155368496!2d-99.02989128552603!3d19.40747478689852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fcc446b766ff%3A0x2b21e090d06bb7c7!2sCalle+Lago+Cupatitzio+109%2C+Agua+Azul+Secc.+Pirules%2C+Agua+Azul+Secc+Pirules%2C+57510+Nezahualc%C3%B3yotl%2C+Estado+de+M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1508700947609" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+          <div class="column">
+            <h3 class="is-size-3">Clínica Lindavista:</h3>
+            <p>CLinares 631B Colonia Lindavista C.P 07300</p>
+            <p><strong>Teléfono:</strong> 26 19 14 41</p>
+            <p><strong>Horarios</strong></p>
+            <p><strong>Lunes a viernes:</strong>  09:00 am - 08:00 pm</p>
+            <p><strong>Sábado:</strong> 03:00 pm - 08:00 pm</p>
+            <p><strong>Domingo:</strong> Cerrado</p>
+          </div>
+          <div class="column">
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.26281280475!2d-99.13318578552462!3d19.487325586853274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9a43aca68a1%3A0x27ceaecd1d8b7ace!2sLinares+631b%2C+Lindavista%2C+07300+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses-419!2smx!4v1508701087701" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <footer>
+      <p class="has-text-centered">© Copyright 2017 Medicina Integrada en Diabetes All Right Reserved</p>
+  </footer>
+</body>
+</html>
