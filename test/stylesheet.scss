@@ -1,52 +1,166 @@
 $body-size: 0.85em !important;
 $family-sans-serif: 'Open Sans', sans-serif;
+$weight-bold: 700;
 $red: #d91d26;
-$blue: #195a9b;
+$primary: #195a9b;
 
-@import "../../Dropbox/bulma/sass/utilities/_all";
-//@import "../../Dropbox/bulma/sass/utilities/initial-variables.sass";
-//@import "../../Dropbox/bulma/sass/utilities/functions.sass";
-//@import "../../Dropbox/bulma/sass/utilities/derived-variables.sass";
-//@import "../../Dropbox/bulma/sass/utilities/animations.sass";
-//@import "../../Dropbox/bulma/sass/utilities/mixins.sass";
-//@import "../../Dropbox/bulma/sass/utilities/controls.sass";
-@import "../../Dropbox/bulma/sass/base/_all";
-//@import "../../Dropbox/bulma/sass/base/minireset.sass";
-//@import "../../Dropbox/bulma/sass/base/generic.sass";
-//@import "../../Dropbox/bulma/sass/base/helpers.sass";
-//@import "../../Dropbox/bulma/sass/elements/_all";
-//@import "../../Dropbox/bulma/sass/components/_all";
-//@import "../../Dropbox/bulma/sass/grid/_all";
-//@import "../../Dropbox/bulma/sass/layout/_all";
-@import "../../Dropbox/bulma/sass/elements/box.sass";
-//@import "../../Dropbox/bulma/sass/elements/button.sass";
-@import "../../Dropbox/bulma/sass/elements/container.sass";
-//@import "../../Dropbox/bulma/sass/elements/content.sass";
-@import "../../Dropbox/bulma/sass/elements/form.sass";
-//@import "../../Dropbox/bulma/sass/elements/icon.sass";
-//@import "../../Dropbox/bulma/sass/elements/image.sass";
-//@import "../../Dropbox/bulma/sass/elements/notification.sass";
-//@import "../../Dropbox/bulma/sass/elements/other.sass";
-//@import "../../Dropbox/bulma/sass/elements/progress.sass";
-//@import "../../Dropbox/bulma/sass/elements/table.sass";
-//@import "../../Dropbox/bulma/sass/elements/tag.sass";
-//@import "../../Dropbox/bulma/sass/elements/title.sass";
-//@import "../../Dropbox/bulma/sass/components/breadcrumb.sass";
-//@import "../../Dropbox/bulma/sass/components/card.sass";
-//@import "../../Dropbox/bulma/sass/components/dropdown.sass";
-//@import "../../Dropbox/bulma/sass/components/level.sass";
-@import "../../Dropbox/bulma/sass/components/media.sass";
-//@import "../../Dropbox/bulma/sass/components/menu.sass";
-//@import "../../Dropbox/bulma/sass/components/message.sass";
-//@import "../../Dropbox/bulma/sass/components/modal.sass";
-//@import "../../Dropbox/bulma/sass/components/nav.sass";
-@import "../../Dropbox/bulma/sass/components/navbar.sass";
-//@import "../../Dropbox/bulma/sass/components/pagination.sass";
-//@import "../../Dropbox/bulma/sass/components/panel.sass";
-//@import "../../Dropbox/bulma/sass/components/tabs.sass";
-@import "../../Dropbox/bulma/sass/grid/columns.sass";
-//@import "../../Dropbox/bulma/sass/grid/tiles.sass";
-//@import "../../Dropbox/bulma/sass/layout/footer.sass";
-//@import "../../Dropbox/bulma/sass/layout/hero.sass";
-//@import "../../Dropbox/bulma/sass/layout/section.sass";
+@import "../../bulma/sass/utilities/_all";
+//@import "../../bulma/sass/utilities/initial-variables.sass";
+//@import "../../bulma/sass/utilities/functions.sass";
+//@import "../../bulma/sass/utilities/derived-variables.sass";
+//@import "../../bulma/sass/utilities/animations.sass";
+//@import "../../bulma/sass/utilities/mixins.sass";
+//@import "../../bulma/sass/utilities/controls.sass";
+@import "../../bulma/sass/base/_all";
+//@import "../../bulma/sass/base/minireset.sass";
+//@import "../../bulma/sass/base/generic.sass";
+//@import "../../bulma/sass/base/helpers.sass";
+//@import "../../bulma/sass/elements/_all";
+//@import "../../bulma/sass/components/_all";
+//@import "../../bulma/sass/grid/_all";
+//@import "../../bulma/sass/layout/_all";
+@import "../../bulma/sass/elements/box.sass";
+@import "../../bulma/sass/elements/button.sass";
+@import "../../bulma/sass/elements/container.sass";
+//@import "../../bulma/sass/elements/content.sass";
+@import "../../bulma/sass/elements/form.sass";
+//@import "../../bulma/sass/elements/icon.sass";
+//@import "../../bulma/sass/elements/image.sass";
+//@import "../../bulma/sass/elements/notification.sass";
+//@import "../../bulma/sass/elements/other.sass";
+//@import "../../bulma/sass/elements/progress.sass";
+//@import "../../bulma/sass/elements/table.sass";
+//@import "../../bulma/sass/elements/tag.sass";
+//@import "../../bulma/sass/elements/title.sass";
+//@import "../../bulma/sass/components/breadcrumb.sass";
+//@import "../../bulma/sass/components/card.sass";
+//@import "../../bulma/sass/components/dropdown.sass";
+//@import "../../bulma/sass/components/level.sass";
+@import "../../bulma/sass/components/media.sass";
+//@import "../../bulma/sass/components/menu.sass";
+//@import "../../bulma/sass/components/message.sass";
+//@import "../../bulma/sass/components/modal.sass";
+//@import "../../bulma/sass/components/nav.sass";
+@import "../../bulma/sass/components/navbar.sass";
+//@import "../../bulma/sass/components/pagination.sass";
+//@import "../../bulma/sass/components/panel.sass";
+//@import "../../bulma/sass/components/tabs.sass";
+@import "../../bulma/sass/grid/columns.sass";
+//@import "../../bulma/sass/grid/tiles.sass";
+//@import "../../bulma/sass/layout/footer.sass";
+@import "../../bulma/sass/layout/hero.sass";
+//@import "../../bulma/sass/layout/section.sass";
 
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Lato' !important;
+}
+h2{
+  color: $primary;
+  margin-bottom: 35px;
+}
+
+header{
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.navbar{
+  background: transparent;
+  align-items: flex-end;
+  flex-flow: column wrap;
+  padding: 20px 0;
+  .navbar-brand{
+    align-self: flex-start;
+    position: absolute;
+    .navbar-item{
+      border-radius: 100%;
+      padding: 10px;
+      margin: 0;
+      background: #fff;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.8);
+      img{
+        max-height: 120px;
+      }
+    }
+  }
+  .is-flex{
+    align-items: center;
+    font-size: 12px;
+    span{
+      display: block;
+      position: relative;
+      padding-left: 6px;
+      &:not(:last-child){
+        padding-right: 12px;
+      }
+      
+    }
+    .mdi{
+      background-color: $primary;
+      color: #FFF;
+      border-radius: 4px;
+      font-size: 18px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      width: 24px;
+    }
+  }
+  .navbar-menu{
+    .navbar-item{
+      padding: 0 10px;
+      line-height: 50px;
+
+    }
+    
+  }
+}
+section{
+  background-size: cover;
+  padding: 140px 0 80px;
+  &.inicio{
+    background-image: url(images/bg-inicio.jpg);
+  }
+  &.contacto{
+    .columns{
+      height: 420px;
+      margin-bottom: 0;
+      margin-top: 0;
+      &:nth-child(even){
+        margin-bottom: 20px;
+        .map{
+          left: 0;
+        }
+      }
+      .map{
+        position: absolute;
+        height: 420px;
+        width: 50%;
+        iframe{
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+form{
+  background-color: rgba(0,0,0,0.75);
+  border-radius: 4px;
+  padding: 35px;
+  h2{
+    color: #FFF;
+  }
+}
+footer{
+  background-color: #263238;
+  color: #FFFFFF;
+  padding: 40px 0;
+  
+}

@@ -6,10 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:700,900|Open+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">  
   <link rel="stylesheet"href="stylesheet.css">
-  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/stellar.min.js"></script>
+  <script type="text/javascript" src="js/scrollit.min.js"></script>
+  <script></script>
   <script type="text/javascript">
-</script>
+ jQuery(function($) {
+  
+    $.scrollIt();
+    $.stellar();
+    
+    $('dt').click(function(){
+      $('dd').removeAttr('class');
+      $(this).next().addClass('is-active');
+    });
+  
+  });
+  </script>
 </head>
 <body>
   <header>
@@ -25,30 +40,33 @@
             <span></span>
           </button>
         </div>
+        <div class="is-flex">
+          <i class="mdi mdi-phone"></i>
+          <span>(55) 2619 1441</span>
+          <i class="mdi mdi-email"></i>
+          <span>mid.diabetes@gmail.com</span>
+        </div>
         <div class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item">INICIO</a>
-            <a class="navbar-item">CONÓCENOS</a>
-            <a class="navbar-item">SERVICIOS</a>
-            <a class="navbar-item">COMPROMISO</a>
-            <a class="navbar-item">CONTACO</a>
-            <div class="navbar-item">mid.diabetes@gmail.com</div>
-            <div class="navbar-item">2619-1441</div>
+            <a class="navbar-item" data-scroll-nav="0">INICIO</a>
+            <a class="navbar-item" data-scroll-nav="1">CONÓCENOS</a>
+            <a class="navbar-item" data-scroll-nav="2">SERVICIOS</a>
+            <a class="navbar-item" data-scroll-nav="3">COMPROMISO</a>
+            <a class="navbar-item" data-scroll-nav="4">CONTACTO</a>
           </div>
         </div>
-        
       </nav>
     </div>
   </header>
-  <section>
+  <section class="inicio" data-scroll-index="0" data-stellar-background-ratio="0.5">
     <div class="container">
-      <div class="columns">
-        <div class="column">
-          <h1 class="is-size-1 has-text-weight-bold has-text-centered">Comunícate con nosotros</h1>
-          <h1 class="is-size-1 has-text-weight-bold has-text-centered">Nos encanta atender a nuestros pacientes</h1>
+      <div class="columns is-vcentered">
+        <div class="column is-6">
+          <h1 class="is-size-1 has-text-weight-bold has-text-centered">Toma el control de tu salud</h1>
         </div>
-        <div class="column">
+        <div class="column is-4 is-offset-1">
           <form action="">
+            <h2 class="is-size-2 has-text-weight-bold has-text-centered">Agenda tu cita</h2>
             <div class="field">
               <div class="control">
                 <input id="name" class="input" type="text" name="nombre" placeholder="Nombre" required> 
@@ -87,72 +105,65 @@
       </div>
     </div>
   </section>
-  <section>
-      <div class="container">
-        <h2 class="is-size-2">Conócenos</h2>
-        <div class="columns">
-          <div class="column">
-            <h3 class="is-red">Atención Integrada al Paciente</h3>
-            <p>Medicina Integrada en Diabetes, tiene más de 20 años de experiencia brindando atención médica con especialistas en el tratamiento de la diabetes y sus complicaciones. Personalizamos el tratamiento con las mejores prácticas clínicas.</p>
-          </div>
-          <div class="column">
-            <h3 class="is-red">¡Toma el control de tu salud!</strong></h3>
-            <p>Sabemos la importancia de que recibas una consulta especializada de calidad. Por esa razón establecemos costos justos y flexibles a tus posibilidades.</p>
-          </div>
-          <div class="column">
-            <h3 class="is-red">Consulta Médica Especializada</strong></h3>
-            <p>Sabemos lo complicado que es estabilizar las consecuencias de la diabetes, por esa razón estamos comprometidos en brindar asistencia médica, seguimiento farmacoterapéutico, así como las técnicas y herramientas necesarias para que tengas el control de tu padecimiento.</p>
-          </div>
+  <section class="conocenos" data-scroll-index="1">
+    <div class="container">
+      <h2 class="is-size-2 has-text-weight-bold has-text-centered">Conócenos</h2>
+      <div class="columns">
+        <div class="column">
+          <h3 class="is-3">Atención Integrada al Paciente</h3>
+          <p>Medicina Integrada en Diabetes, tiene más de 20 años de experiencia brindando atención médica con especialistas en el tratamiento de la diabetes y sus complicaciones. Personalizamos el tratamiento con las mejores prácticas clínicas.</p>
+        </div>
+        <div class="column">
+          <h3 class="is-3">¡Toma el control de tu salud!</strong></h3>
+          <p>Sabemos la importancia de que recibas una consulta especializada de calidad. Por esa razón establecemos costos justos y flexibles a tus posibilidades.</p>
+        </div>
+        <div class="column">
+          <h3 class="is-3">Consulta Médica Especializada</strong></h3>
+          <p>Sabemos lo complicado que es estabilizar las consecuencias de la diabetes, por esa razón estamos comprometidos en brindar asistencia médica, seguimiento farmacoterapéutico, así como las técnicas y herramientas necesarias para que tengas el control de tu padecimiento.</p>
         </div>
       </div>
-    </section>
-  <section>
+    </div>
+  </section>
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container">
+        ss
+      </div>
+    </div>
+  </section>
+  <section class="servicios" data-scroll-index="2">
     <div class="container">
-      <h2 class="is-size-2">Servicios especializados</h2>
+      <h2 class="is-size-2 has-text-weight-bold has-text-centered">Servicios especializados</h2>
       <div class="columns">
         <div class="column">
           <dl>
             <dt>
-              <h3 class="is-size-3">Consulta Médica Especializada</h3>
+              <h4 class="is-size-4">Consulta Médica Especializada</h4>
               <i class="mdi mdi-plus"></i>
             </dt>
             <dd>
-              <p>Durante la consulta el médico especialista utiliza un método clínico que le permite identificar las necesidades de cada individuo, preescribe su tratamiento en base a estándares internacionales e incorpora en su práctica médica tecnologías en salud. </p>
+              <p>Atención a pacientes con diabetes y enfermedades crónicas por médicos especialistas en medicina integrada. Durante la consulta se utiliza un método clínico centrado en el paciente que permite identificar las necesidades de cada individuo. Prescripción de tratamientos en base a estándares internacionales y guías de práctica clínica.</p>
             </dd>
             <dt>
-              <h3 class="is-size-3">Tratamiento Avanzado en Heridas</h3>
+              <h4 class="is-size-4">Tratamiento avanzado en heridas crónicas</h4>
               <i class="mdi mdi-plus"></i>
             </dt>
             <dd>
-              <p>A todo individuo que padece una herida crónica (úlceras venosas, úlceras por pie diabético, úlceras arteriales, úlceras por presión, etc.), se otorga un tratamiento basado en evidencia científica que disminuye el número de curaciones,  el dolor que éstas ocasionan al paciente y los gastos en los que se incurre por éstas intervenciones. </p>
+              <p>Atendemos pacientes con ulceras venosas, ulceras por presión, pie diabético, ulceras arteriales, etc.  Primeramente, se realiza una valoración para emitir el diagnóstico y en base a esto se otorga un tratamiento basado en evidencia científica que disminuye el número de curaciones, el dolor que éstas ocasionan al paciente y los gastos en los que se incurre por dichas intervenciones.  Colaboramos con la Dra. Tessy López Göerne, nominada al premio nobel de química en 2006, formando parte de la red de consultorio de nanomedicina, si el paciente es candidato se inicia manejo con Nanoparticulas. </p>
             </dd>
             <dt>
-              <h3 class="is-size-3">Protocolo de Nanopartículas</h3>
+              <h4 class="is-size-4">Seguimiento Farmacoterapéutico</h4>
               <i class="mdi mdi-plus"></i>
             </dt>
             <dd>
-              <p>Nuestro equipo de médicos especialistas colabora estrechamente con la Dra. Tessy López Goerne, nominada al premio nobel de química en 2016, formando parte de la red de consultorios de nanomedicina.</p>
+              <p>Contamos con farmacéuticos clínicos, con amplia experiencia en el extranjero, quienes realizan llamadas de seguimiento a todos nuestros pacientes para evaluar como se ha sentido el paciente con los medicamentos prescritos por su médico. Durante la llamada telefónica el farmacéutico realiza preguntas para corroborar si el paciente consiguió el medicamento, si encontró la dosis, si sabe cómo tomarlo, si debe tomarlo antes, durante o después de los alimentos, si presento alguna reacción adversa, etc. </p>
             </dd>
             <dt>
-              <h3 class="is-size-3">Servicio de Seguimiento Farmacoterapéutico</h3>
+              <h4 class="is-size-4">Sesiones médicas informativas</h4>
               <i class="mdi mdi-plus"></i>
             </dt>
             <dd>
-              <p>Somos pioneros en México en implementar farmacia clínica en primer nivel de atención. Esto quiere decir que como nuestro paciente recibirás un seguimiento estrecho en donde nuestros especialistas te diseñaran el mejor plan para la toma de todos tus medicamentos.</p>
-            </dd>  
-            <dt>
-              <h3 class="is-size-3">Expediente Electrónico / APP</h3>
-              <i class="mdi mdi-plus"></i>
-            </dt>
-            <dd>
-              <p>Contamos con un expediente electrónico, que es personalizado para cada paciente. El expediente cuenta con una APP para descargarse en su smartphone, lo que le permite tener una comunicación más directa con su médico especialista. Este servicio es sin costo para el paciente.</p>
-            </dd>    
-            <dt>
-              <h3 class="is-size-3">Sesiones Médicas Informativas</h3>
-              <i class="mdi mdi-plus"></i>
-            </dt>
-            <dd>
-              <p>Las sesiones son un servicio de apoyo por parte de nuestro equipo médico para proporcionar información actualizada y tips para el control de tu enfermedad.</p>
+              <p>Brindamos pláticas a nuestros pacientes en las que proporcionamos información actualizada para el control de la diabetes y tips que los ayude a llegar a metas de tratamiento y evitar complicaciones a largo plazo.</p>
             </dd>
           </dl>
         </div>
@@ -160,44 +171,40 @@
       </div>
     </div>
   </section>
-  <section>
+  <section class="compromiso" data-scroll-index="3">
     <div class="container has-text-centered">
-      <h2 class="is-size-2">Compromisos</h2>
+      <h2 class="is-size-2 has-text-weight-bold has-text-centered">Compromiso</h2>
       <div class="columns">
         <div class="column">
-          <div class="box">
-            <h3 class="is-size-3">Misión</h3>
-            <p>Contribuir a mejorar la calidad de vida de las personas que viven con diabetes, por medio de una intervención clínica estructurada centrada en el paciente que busca responder a las necesidades y expectativas de cada individuo.</p>
-          </div>
+          <h4 class="is-size-4">Misión</h4>
+          <p>Contribuir a mejorar la calidad de vida de las personas que viven con diabetes, por medio de una intervención clínica estructurada centrada en el paciente que busca responder a las necesidades y expectativas de cada individuo.</p>
         </div>
         <div class="column">
-          <div class="box">
-            <h3 class="is-size-3">Visión</h3>
-            <p>Ser líderes en el primer nivel de atención, teniendo la mayor presencia de unidades médicas en el país; brindando una excelente calidad y calidez en todos los servicios que ofrecemos.</p>
-          </div>
+          <h4 class="is-size-4">Visión</h4>
+          <p>Ser líderes en el primer nivel de atención, teniendo la mayor presencia de unidades médicas en el país; brindando una excelente calidad y calidez en todos los servicios que ofrecemos.</p>
         </div>
         <div class="column is-3">
-          <div class="box">
-            <h3 class="is-size-3">Valores</h3>
-            <ul>
-              <li>Honestidad</li>
-              <li>Humildad</li>
-              <li>Lealtad</li>
-              <li>Pasión</li>
-            </ul>
-          </div>
+          <h4 class="is-size-4">Valores</h4>
+          <ul>
+            <li>Honestidad</li>
+            <li>Humildad</li>
+            <li>Lealtad</li>
+            <li>Pasión</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
-  <section>
+  <section class="contacto" data-scroll-index="4">
     <div class="container">
+      <h2 class="is-size-2 has-text-weight-bold has-text-centered">Medicina Integrada en Diabetes</h2>
       <div class="columns">
-        <div class="column">
-          <h3 class="is-size-3">Clínica Nezahualcóyotl:</h3>
+          <div class="column is-vcentered">
+          <h4 class="is-size-4 has-text-weight-bold">Clínica Nezahualcóyotl</h3>
           <p>Calle Lago Cupatitzio 109, Nezahualcóyotl, México, México</p>
-          <p><strong>Teléfono:</strong> 26 19 14 41</p>
-          <p><strong>Horarios</strong></p>
+          <h5 class="is-size-5 has-text-weight-bold"><i class="mdi mdi-phone"></i> Telefono</h5>
+          <p> 26 19 14 41</p>
+          <h5 class="is-size-5 has-text-weight-bold"><i class="mdi mdi-calendar-clock"></i> Horarios</h5>
           <p><strong>Lunes a viernes:</strong>  09:00 am - 08:00 pm</p>
           <p><strong>Sábado:</strong> 03:00 pm - 08:00 pm</p>
           <p><strong>Domingo:</strong> Cerrado</p>
@@ -209,11 +216,12 @@
         </div>
       </div>
       <div class="columns">
-          <div class="column">
-            <h3 class="is-size-3">Clínica Lindavista:</h3>
+          <div class="column is-vcentered">
+            <h4 class="is-size-4 has-text-weight-bold">Clínica Lindavista</h4>
             <p>CLinares 631B Colonia Lindavista C.P 07300</p>
-            <p><strong>Teléfono:</strong> 26 19 14 41</p>
-            <p><strong>Horarios</strong></p>
+            <h5 class="is-size-5 has-text-weight-bold"><i class="mdi mdi-phone"></i> Telefono</h5>
+            <p> 26 19 14 41</p>
+            <h5 class="is-size-5 has-text-weight-bold"><i class="mdi mdi-calendar-clock"></i> Horarios</h5>
             <p><strong>Lunes a viernes:</strong>  09:00 am - 08:00 pm</p>
             <p><strong>Sábado:</strong> 03:00 pm - 08:00 pm</p>
             <p><strong>Domingo:</strong> Cerrado</p>
